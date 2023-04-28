@@ -1,0 +1,72 @@
+:root {
+  --heading-font: "Damion", cursive;
+  --nav-font: "Josefin Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 32px;
+}
+
+.brand-name {
+  font-family: var(--heading-font);
+  padding-left: 50px;
+  font-size: 24px;
+}
+
+.nav-item {
+  padding: 0 20px;
+  font-family: var(--nav-font);
+}
+
+.active {
+  border-bottom: 3px black solid;
+}
+.navbar {
+  padding: 0;
+}
+.header-image {
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  width: 100%;
+  min-height: 250px;
+}
+
+.intro {
+  text-align: center;
+  margin: 50px;
+}
+
+.home-images {
+  max-width: 200px !important;
+  min-height: 200px !important;
+  border-radius: 5px;
+}
+
+.links-title {
+  font-size: 24px;
+  font-family: var(--nav-font);
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .brand-name {
+    padding: 0;
+    font-size: 14px;
+  }
+}
