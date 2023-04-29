@@ -58,6 +58,10 @@ h2 {
   font-family: var(--nav-font);
 }
 
+.home-item {
+  height: 100%;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 32px;
