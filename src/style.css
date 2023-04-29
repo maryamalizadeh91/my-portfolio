@@ -18,6 +18,11 @@ h2 {
   font-size: 32px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .brand-name {
   font-family: var(--heading-font);
   padding-left: 50px;
@@ -60,6 +65,10 @@ h2 {
 
 .home-item {
   height: 100%;
+  transition: all 1s ease-out;
+}
+.home-item:hover {
+  background-color: #eeeff1;
 }
 
 @media (max-width: 960px) {
