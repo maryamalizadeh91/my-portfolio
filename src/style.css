@@ -58,9 +58,20 @@ a {
   border-radius: 5px;
 }
 
+.home-images:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+}
+
 .links-title {
   font-size: 24px;
   font-family: var(--nav-font);
+}
+
+.social-links:hover {
+  transform: scale(1.4);
+  transition: all 1s ease-out;
+  color: #c0c2c8 !important;
 }
 
 .home-item {
@@ -69,6 +80,11 @@ a {
 }
 .home-item:hover {
   background-color: #eeeff1;
+}
+
+.parts-headline:hover {
+  font-size: 1.85rem;
+  transition: all 0.5s ease-out;
 }
 
 @media (max-width: 960px) {
