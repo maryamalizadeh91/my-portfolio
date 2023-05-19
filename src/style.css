@@ -34,6 +34,15 @@ a {
   font-family: var(--nav-font);
 }
 
+.nav-item:hover {
+  border-bottom: 3px black solid;
+  transition: all 0.2s ease-out;
+}
+
+.nav-item:hover .active {
+  border: 0;
+}
+
 .active {
   border-bottom: 3px black solid;
 }
@@ -85,6 +94,15 @@ a {
 .parts-headline:hover {
   font-size: 1.85rem;
   transition: all 0.5s ease-out;
+}
+
+.footer-part {
+  font-size: 14px;
+}
+
+#project-link {
+  text-decoration: underline;
+  color: #bfc0c5;
 }
 
 @media (max-width: 960px) {
