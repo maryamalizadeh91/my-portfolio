@@ -1,6 +1,8 @@
 :root {
   --heading-font: "Damion", cursive;
   --nav-font: "Josefin Sans", sans-serif;
+  --first-light-gray: #eeeff1;
+  --second-light-gray: #bfc0c5;
 }
 h1,
 h2,
@@ -21,6 +23,16 @@ h2 {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
+}
+
+.accordion-button {
+  font-size: 24px;
+  background: var(--first-light-gray);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--first-light-gray);
 }
 
 .brand-name {
@@ -34,13 +46,10 @@ a {
   font-family: var(--nav-font);
 }
 
-.nav-item:hover {
+.nav-link:hover {
   border-bottom: 3px black solid;
+  border-radius: 5px;
   transition: all 0.2s ease-out;
-}
-
-.nav-item:hover .active {
-  border: 0;
 }
 
 .active {
@@ -80,7 +89,7 @@ a {
 .social-links:hover {
   transform: scale(1.4);
   transition: all 1s ease-out;
-  color: #c0c2c8 !important;
+  color: var(--second-light-gray) !important;
 }
 
 .home-item {
@@ -88,12 +97,16 @@ a {
   transition: all 1s ease-out;
 }
 .home-item:hover {
-  background-color: #eeeff1;
+  background: var(--first-light-gray);
 }
 
 .parts-headline:hover {
   font-size: 1.85rem;
   transition: all 0.5s ease-out;
+}
+
+.project-paragraphs {
+  font-size: 22px;
 }
 
 .footer-part {
@@ -102,7 +115,7 @@ a {
 
 #project-link {
   text-decoration: underline;
-  color: #bfc0c5;
+  color: var(--second-light-gray);
 }
 
 @media (max-width: 960px) {
@@ -110,10 +123,14 @@ a {
     font-size: 32px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .brand-name {
     padding: 0;
     font-size: 14px;
+  }
+
+  .project-paragraphs {
+    font-size: 16px;
   }
 }
